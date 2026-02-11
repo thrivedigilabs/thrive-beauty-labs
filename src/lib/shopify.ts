@@ -1,13 +1,31 @@
 // Shopify Storefront API Integration
 // Replace these with your actual Shopify credentials and product IDs
 
-const SHOPIFY_DOMAIN = 'your-store.myshopify.com';
-const STOREFRONT_ACCESS_TOKEN = 'your-storefront-token';
+// ─── CONFIGURATION ───────────────────────────────────────────────
+// Set these via environment variables in your hosting platform.
+// Create a .env file locally (never commit it!) with:
+//
+//   VITE_SHOPIFY_DOMAIN=your-store.myshopify.com
+//   VITE_SHOPIFY_STOREFRONT_TOKEN=your-storefront-access-token
+//   VITE_PRODUCT_ID_DIGITAL_BUNDLE=gid://shopify/ProductVariant/XXXXX
+//   VITE_PRODUCT_ID_MAKEUP_BAG=gid://shopify/ProductVariant/XXXXX
+//   VITE_PRODUCT_ID_JEWELLERY_BOX=gid://shopify/ProductVariant/XXXXX
+//
+// On Hostinger: Add these in Website → Advanced → Environment Variables
+// On GitHub Pages: Set them as repository secrets and pass via CI build
+// ─────────────────────────────────────────────────────────────────
+
+const SHOPIFY_DOMAIN = import.meta.env.VITE_SHOPIFY_DOMAIN || 'your-store.myshopify.com';
+const STOREFRONT_ACCESS_TOKEN = import.meta.env.VITE_SHOPIFY_STOREFRONT_TOKEN || 'your-storefront-token';
 
 export const PRODUCT_IDS = {
-  digitalBundle: 'gid://shopify/ProductVariant/XXXXX',
-  makeupBag: 'gid://shopify/ProductVariant/XXXXX',
-  jewelleryBox: 'gid://shopify/ProductVariant/XXXXX',
+  digitalBundle: import.meta.env.VITE_PRODUCT_ID_DIGITAL_BUNDLE || 'gid://shopify/ProductVariant/XXXXX',
+  makeupBag: import.meta.env.VITE_PRODUCT_ID_MAKEUP_BAG || 'gid://shopify/ProductVariant/XXXXX',
+  jewelleryBox: import.meta.env.VITE_PRODUCT_ID_JEWELLERY_BOX || 'gid://shopify/ProductVariant/XXXXX',
+};
+
+export const isShopifyConfigured = () => {
+  return SHOPIFY_DOMAIN !== 'your-store.myshopify.com' && STOREFRONT_ACCESS_TOKEN !== 'your-storefront-token';
 };
 
 interface CartItem {
