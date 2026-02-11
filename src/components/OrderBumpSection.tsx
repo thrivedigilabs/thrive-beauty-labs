@@ -12,14 +12,15 @@ const OrderBumpSection = () => {
   const total = basePrice + (makeupBag ? 299 : 0) + (jewelleryBox ? 199 : 0);
 
   return (
-    <section id="final-cta" className="section-padding cream-gradient">
-      <div className="section-container">
-        <motion.div
-          className="max-w-3xl mx-auto text-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
+    <section id="final-cta" className="section-padding bg-background">
+      <div className="section-container max-w-3xl">
+        <div className="border-3 border-gold rounded-3xl bg-white p-12 shadow-2xl">
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
           <img
             src={heroImage}
             alt="The complete ThriveBeautyLabs guide system"
@@ -114,6 +115,7 @@ const OrderBumpSection = () => {
             </p>
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );
