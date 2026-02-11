@@ -10,7 +10,7 @@ import WhoIsForSection from "@/components/WhoIsForSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import UrgencySection from "@/components/UrgencySection";
 import FAQSection from "@/components/FAQSection";
-import FinalCTASection from "@/components/FinalCTASection";
+import OrderBumpSection from "@/components/OrderBumpSection";
 import Footer from "@/components/Footer";
 import MobileStickyBar from "@/components/MobileStickyBar";
 
@@ -30,7 +30,7 @@ const Index = () => {
         <GuaranteeSection />
         <UrgencySection />
         <FAQSection />
-        <FinalCTASection />
+        <OrderBumpSection />
       </main>
       <Footer />
       <MobileStickyBar />
