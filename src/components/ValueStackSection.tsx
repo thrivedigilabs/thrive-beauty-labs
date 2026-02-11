@@ -1,7 +1,7 @@
 import { Check, Gift } from "lucide-react";
 import { motion } from "framer-motion";
-import guideTruetone from "@/assets/guide-truetone.jpg";
-import guideJetsetter from "@/assets/guide-jetsetter.jpg";
+import guideTruetone from "@/assets/guide-truetone.png";
+import guideJetsetter from "@/assets/guide-jetsetter.png";
 
 const guide1Features = [
   "The Ultimate Foundation Directory — 50+ foundations mapped for Indian skin tones",
