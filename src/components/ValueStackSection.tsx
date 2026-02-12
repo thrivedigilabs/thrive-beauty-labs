@@ -117,44 +117,6 @@ const ValueStackSection = () => {
           </div>
         </motion.div>
 
-        {/* Bonuses */}
-        <motion.div
-          className="border-2 border-dashed border-gold/40 bg-gold/5 rounded-2xl p-8 mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <h3 className="font-heading text-xl font-bold mb-6 flex items-center gap-2">
-            <Gift size={22} className="text-gold-dark" />
-            Exclusive Bonus Resources — Included FREE
-          </h3>
-          <ul className="grid sm:grid-cols-2 gap-3">
-            {bonuses.map((b) => (
-              <FeatureItem key={b} text={b} />
-            ))}
-          </ul>
-        </motion.div>
-
-        {/* Total Value */}
-        <motion.div
-          id="pricing"
-          className="card-premium text-center border-2 border-gold/30 max-w-xl mx-auto"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-        >
-          <p className="font-label text-sm text-muted-foreground mb-2">TOTAL SYSTEM VALUE</p>
-          <p className="font-heading text-2xl text-muted-foreground line-through mb-1">₹2,999</p>
-          <p className="font-heading text-5xl md:text-6xl font-bold text-gradient-gold mb-2">₹799</p>
-          <div className="inline-block bg-destructive/10 text-destructive font-label font-semibold text-sm px-4 py-1.5 rounded-full -rotate-2 mb-4">
-            YOU SAVE: ₹2,200 (73% OFF)
-          </div>
-          <div className="mt-4">
-            <a href="#final-cta" className="btn-primary pulse-cta">
-              Get The Complete System — ₹799
-            </a>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
