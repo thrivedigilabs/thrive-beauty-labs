@@ -34,7 +34,7 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a href="#pricing" className="btn-primary text-sm !px-6 !py-3">
+          <a href="#final-cta" className="btn-primary text-sm !px-6 !py-3">
             Download Now — ₹799
             <ArrowRight size={16} />
           </a>
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#pricing"
+                href="#final-cta"
                 onClick={() => setIsOpen(false)}
                 className="btn-primary text-center text-base !px-6 !py-3 mt-2"
               >
