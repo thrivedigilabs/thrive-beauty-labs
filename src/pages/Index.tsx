@@ -23,8 +23,8 @@ const Index = () => {
         <TestimonialsSection />
         <PricingComparisonSection />
         <WhoIsForSection />
-        <FAQSection />
         <OrderBumpSection />
+        <FAQSection />
       </main>
       <Footer />
       <MobileStickyBar />
