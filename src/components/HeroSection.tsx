@@ -33,7 +33,7 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
-              <a href="#pricing" className="btn-primary pulse-cta">
+              <a href="#final-cta" className="btn-primary pulse-cta">
                 Get Instant Access — ₹799
                 <ArrowRight size={20} />
               </a>
