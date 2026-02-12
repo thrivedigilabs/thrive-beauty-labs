@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-secondary text-secondary-foreground py-12">
@@ -7,13 +9,17 @@ const Footer = () => {
           Expert beauty guides created specifically for Indian skin tones. Empowering 2,000+ women
           to find their perfect shades and travel with confidence.
         </p>
-        <div className="flex justify-center gap-6 text-sm font-label opacity-60 mb-6">
-          <a href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</a>
-          <a href="#" className="hover:opacity-100 transition-opacity">Terms of Service</a>
-          <a href="#" className="hover:opacity-100 transition-opacity">Contact Us</a>
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm font-label opacity-60 mb-6">
+          <Link to="/privacy-policy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
+          <Link to="/terms-and-conditions" className="hover:opacity-100 transition-opacity">Terms & Conditions</Link>
+          <Link to="/refund-policy" className="hover:opacity-100 transition-opacity">Refund Policy</Link>
+          <Link to="/shipping-policy" className="hover:opacity-100 transition-opacity">Shipping Policy</Link>
         </div>
+        <p className="font-body text-sm opacity-60 mb-4">
+          📧 thrivedigilabs@gmail.com
+        </p>
         <p className="font-body text-xs opacity-40">
-          © {new Date().getFullYear()} ThriveBeautyLabs. All rights reserved.
+          © {new Date().getFullYear()} ThriveDigiLabs. All rights reserved.
         </p>
       </div>
     </footer>
