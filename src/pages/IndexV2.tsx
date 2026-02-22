@@ -6,6 +6,7 @@ import WhatsInsideSectionV2 from "@/components/v2/WhatsInsideSectionV2";
 import TestimonialsSectionV2 from "@/components/v2/TestimonialsSectionV2";
 import WhoIsForSectionV2 from "@/components/v2/WhoIsForSectionV2";
 import PricingSectionV2 from "@/components/v2/PricingSectionV2";
+import PricingComparisonSectionV2 from "@/components/v2/PricingComparisonSectionV2";
 import OrderBumpSectionV2 from "@/components/v2/OrderBumpSectionV2";
 import FAQSectionV2 from "@/components/v2/FAQSectionV2";
 import FinalCTASectionV2 from "@/components/v2/FinalCTASectionV2";
@@ -24,6 +25,7 @@ const IndexV2 = () => {
         <TestimonialsSectionV2 />
         <WhoIsForSectionV2 />
         <PricingSectionV2 />
+        <PricingComparisonSectionV2 />
         <OrderBumpSectionV2 />
         <FAQSectionV2 />
         <FinalCTASectionV2 />
